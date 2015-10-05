@@ -35,10 +35,6 @@ User_Stream APIとRest APIを使用している。
 
 * twitterのインスタンスを呼び出すときに、コンフィグファイル名称を指定する
 
-```
-\Twitter\Rest::getInstance($conf_nm);
-```
-
 ## How To Use _(ライブラリのみを使用する場合)_
 * 呼び出し元のクラスで必要なファイルを読み込む
 
