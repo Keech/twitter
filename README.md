@@ -1,6 +1,5 @@
 # Twitter-Api #
 Twitterでのユーザー対応を自動化するためのモジュール。
-User_Stream APIとRest APIを使用している。
 
 * * *
 
@@ -31,6 +30,7 @@ User_Stream APIとRest APIを使用している。
 * configフォルダの中にアカウントごとの設定ファイルを生成する 
 （※全てのconfigファイルはdefault.phpとマージされる）  
 * ジョブを呼ぶときに第一引数で使用するコンフィグファイルを指定する
+
   ```php
 sh ./auto_unfollow.php ja
 ```
@@ -55,6 +55,11 @@ $twitter_rest = \Twitter\Rest::getInstance($conf_nm);
  * phirehose-master  
 https://github.com/fennb/phirehose/wiki/Introduction
 
+# 使用しているTwitterAPI
+* User_Stream API
+* Rest API
+
 # 動作環境
-※ php 5.2.0以上で動作  
-※ php 5.4.0以上で動かした場合、Strict Standardsの警告が表示されることに注意  
+* php 5.2.0以上で動作  
+* php 5.4.0以上で動かした場合、Strict Standardsの警告が表示されることに注意
+
