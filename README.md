@@ -33,6 +33,12 @@ User_Stream APIとRest APIを使用している。
 ※php 5.2.0以上で動作  
 ※php 5.4.0以上で動かした場合、Strict Standardsの警告が表示されることに注意  
 
+* twitterのインスタンスを呼び出すときに、コンフィグファイル名称を指定する
+
+```
+\Twitter\Rest::getInstance($conf_nm);
+```
+
 ## How To Use _(ライブラリのみを使用する場合)_
 * 呼び出し元のクラスで必要なファイルを読み込む
 
@@ -45,7 +51,10 @@ require_once PathToLibrary.'/twitter/user_stream.php');
 その際、引数に読み込むconfigファイル名称を指定する  
 （※すべてのクラスはTwitter名前空間に属することに注意）  
 
-```php
+
+```
+``ph
+```
 $twitter_rest = \Twitter\Rest::getInstance($conf_nm);
 ```
 
