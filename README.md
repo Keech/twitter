@@ -47,10 +47,7 @@ require_once PathToLibrary.'/twitter/user_stream.php');
 その際、引数に読み込むconfigファイル名称を指定する  
 （※すべてのクラスはTwitter名前空間に属することに注意）  
 
-
-```
-``ph
-```
+  ```php
 $twitter_rest = \Twitter\Rest::getInstance($conf_nm);
 ```
 
