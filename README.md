@@ -30,8 +30,10 @@ User_Stream APIとRest APIを使用している。
 # How To Use
 * configフォルダの中にアカウントごとの設定ファイルを生成する 
 （※全てのconfigファイルはdefault.phpとマージされる）  
-※php 5.2.0以上で動作  
-※php 5.4.0以上で動かした場合、Strict Standardsの警告が表示されることに注意  
+* ジョブを呼ぶときに第一引数で使用するコンフィグファイルを指定する
+  ```php
+sh ./auto_unfollow.php ja
+```
 
 ## How To Use _(ライブラリのみを使用する場合)_
 * 呼び出し元のクラスで必要なファイルを読み込む
@@ -49,8 +51,10 @@ require_once PathToLibrary.'/twitter/user_stream.php');
 $twitter_rest = \Twitter\Rest::getInstance($conf_nm);
 ```
 
-* * *
-
 # 使用してるライブラリ
  * phirehose-master  
 https://github.com/fennb/phirehose/wiki/Introduction
+
+# 動作環境
+※ php 5.2.0以上で動作  
+※ php 5.4.0以上で動かした場合、Strict Standardsの警告が表示されることに注意  
